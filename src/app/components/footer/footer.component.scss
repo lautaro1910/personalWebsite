@@ -1,0 +1,66 @@
+footer {
+    max-width: 100%;
+    border-radius: 1rem;
+    background-color: var(--color-1) !important;
+    color: var(--color-text) !important;
+    padding: 0.5rem; // Añade padding para mejorar el espaciado interno
+
+    .social {
+        display: flex;
+        justify-content: center; // Centra los iconos en pantallas pequeñas
+        gap: 1rem; // Espacio entre iconos
+        margin-top: 0.2rem;
+
+        a {
+            display: inline-block;
+            transition: transform 0.3s ease, color 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+
+                i {
+                    font-size: 1rem; // Tamaño de los iconos al hacer hover
+                }
+            }
+        }
+    }
+
+    .copyright {
+        background-color: rgba(0, 0, 0, 0.253) !important;
+        text-align: center;
+        padding: 0.5rem 0;
+        margin-top: 1rem;
+        font-size: 0.875rem;
+        border-radius: 2rem;
+    }
+
+    // Media Queries para adaptabilidad
+    @media (min-width: 1200px) {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-left: 30rem;
+        margin-right: 30rem;
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        margin-top: 1.5rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    @media (max-width: 767px) {
+        margin-top: 2rem;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 0; // Opcional: elimina el borde redondeado en pantallas pequeñas
+        text-align: center;
+
+        .social {
+            flex-direction: row;
+            justify-content: center;
+            gap: 1rem;
+        }
+    }
+}

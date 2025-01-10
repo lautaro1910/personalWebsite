@@ -1,0 +1,86 @@
+.container-principal {
+    background-color: whitesmoke;
+    max-width: 100%;
+    padding: 0.7rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 1.2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+    span {
+        color: var(--color-1);
+        font-weight: 900;
+    }
+
+    .about-me {
+        max-width: 95%;
+        margin: auto;
+
+
+        p {
+            text-align: justify;
+        }
+    }
+
+
+
+    .learning {
+        margin-left: -2rem;
+
+        .learning-item {
+            margin-left: 3rem;
+        }
+    }
+
+    h3 {
+        text-align: center;
+        margin-top: 0.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boton {
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        margin-top: 0.5rem;
+
+        .btn {
+            color: whitesmoke;
+            font-weight: 700;
+        }
+    }
+
+    .typing {
+        display: inline-block;
+        border-right: 2px solid black;
+        /* Cursor de la máquina de escribir */
+        padding-right: 5px;
+        /* Espacio extra para el cursor */
+        white-space: nowrap;
+        /* Evitar que el texto se rompa */
+        overflow: hidden;
+        /* Ocultar texto no escrito */
+        min-height: 2.5rem;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
+
+
+
+}

@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --color-1: #19635b;
+    --color-text: rgb(230, 230, 230);
+    --btn-hover-color: #4a6f8d;
+}
+
+body {
+    background-image: url('/assets/photos/background_stars.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    .btn {
+        background-color: var(--color-1);
+        border-radius: 0.5rem;
+        border: 1px solid var(--color-1);
+        transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: var(--btn-hover-color);
+        color: var(--color-text);
+        border: 1px solid var(--color-1);
+        transform: scale(1.2);
+
+    }
+}
