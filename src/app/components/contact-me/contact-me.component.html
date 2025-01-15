@@ -1,1 +1,42 @@
-<p>contact-me works!</p>
+<!-- contact me -->
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <div class="card shadow-lg border-0">
+                <div class="card-body p-4">
+                    <h4 class="card-title text-center mb-4"><span>Charlemos!</span></h4>
+                    <form>
+                        <!-- Nombre -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name"
+                                placeholder="Tu nombre (p.e: Lautaro Soria)" required>
+                        </div>
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email"
+                                placeholder="Tu email (p.e: lautaro@email.com)" required>
+                        </div>
+                        <!-- Asunto -->
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Asunto</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Asunto del mensaje"
+                                required>
+                        </div>
+                        <!-- Mensaje -->
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Escribi tu mensaje aca..."
+                                required></textarea>
+                        </div>
+                        <!-- Botón de envío -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

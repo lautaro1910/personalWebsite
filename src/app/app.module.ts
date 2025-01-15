@@ -7,9 +7,10 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ServicesComponent } from './components/services/services.component';
+import { ServicesComponent } from './components/services-ofrecidos/services.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
+import { LoadingPreviewComponent } from './components/loading-preview/loading-preview.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ContactMeComponent } from './components/contact-me/contact-me.component
     FooterComponent,
     ServicesComponent,
     ProjectsComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    LoadingPreviewComponent
   ],
   imports: [
     BrowserModule,

@@ -1,13 +1,15 @@
-<app-navbar></app-navbar>
+<app-loading-preview *ngIf="loading"></app-loading-preview>
 
-<!-- <app-home-page></app-home-page> -->
+<div *ngIf="!loading">
+    <app-navbar (pageChanged)="changePage($event)"></app-navbar>
 
-<!-- <app-about-me></app-about-me> -->
+    <app-home-page *ngIf="currentComponent === 'homePage'"></app-home-page>
+    <app-about-me (inTouch)="changePage($event)" *ngIf="currentComponent === 'aboutMe'"></app-about-me>
+    <app-services *ngIf="currentComponent === 'services'"></app-services>
+    <app-projects *ngIf="currentComponent === 'projects'"></app-projects>
+    <app-contact-me *ngIf="currentComponent === 'contactMe'"></app-contact-me>
 
-<app-services></app-services>
+    <app-footer></app-footer>
+</div>
 
-
-<app-footer></app-footer>
-
-
-<router-outlet />
+<router-outlet></router-outlet>

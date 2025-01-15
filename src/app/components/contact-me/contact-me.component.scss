@@ -1,0 +1,21 @@
+.container-principal {
+
+    span {
+        color: var(--color-1);
+        font-weight: 900;
+    }
+
+    .boton {
+        width: 70%;
+        margin: auto;
+        text-align: center;
+
+        .btn {
+            color: whitesmoke;
+            width: 27%;
+            font-weight: 700;
+            margin: auto;
+        }
+    }
+
+}

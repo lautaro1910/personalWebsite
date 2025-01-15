@@ -17,19 +17,19 @@
                         <ul class="navbar-nav mb-2 mb-lg-0 text-center ">
                             <!-- Alineación horizontal -->
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Principal</a>
+                                <a class="nav-link active" aria-current="page" (click)="onButtonClick('homePage')">Principal</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Sobre mi</a>
+                                <a class="nav-link" (click)="onButtonClick('aboutMe')">Sobre mi</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Servicios</a>
+                                <a class="nav-link" (click)="onButtonClick('services')">Servicios</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Portafolio</a>
+                                <a class="nav-link" (click)="onButtonClick('projects')">Portafolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Charlemos!</a>
+                                <a class="nav-link" (click)="onButtonClick('contactMe')">Charlemos!</a>
                             </li>
                         </ul>
                     </div><button class="navbar-toggler" type="button" data-bs-toggle="collapse"

@@ -42,6 +42,9 @@
                 transform: scale(1.05);
             }
         }
+.nav-item:hover {
+    cursor: pointer;
+}
     }
 
     .logo_and_name {

@@ -3,12 +3,15 @@ footer {
     border-radius: 1rem;
     background-color: var(--color-1) !important;
     color: var(--color-text) !important;
-    padding: 0.5rem; // Añade padding para mejorar el espaciado interno
+    padding: 0.5rem;
+        position: relative;
+        /* No usa fixed para evitar solaparse con contenido */
+        margin: 0;
 
     .social {
         display: flex;
-        justify-content: center; // Centra los iconos en pantallas pequeñas
-        gap: 1rem; // Espacio entre iconos
+        justify-content: center;
+            gap: 1rem;
         margin-top: 0.2rem;
 
         a {
@@ -19,7 +22,7 @@ footer {
                 transform: scale(1.1);
 
                 i {
-                    font-size: 1rem; // Tamaño de los iconos al hacer hover
+                    font-size: 1rem;
                 }
             }
         }
@@ -34,27 +37,18 @@ footer {
         border-radius: 2rem;
     }
 
-    // Media Queries para adaptabilidad
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                /* Media Queries */
     @media (min-width: 1200px) {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin-left: 30rem;
-        margin-right: 30rem;
+        margin: 2rem 30rem;
+            /* Centra el footer */
     }
 
     @media (min-width: 768px) and (max-width: 1199px) {
-        margin-top: 1.5rem;
-        margin-left: 10rem;
-        margin-right: 10rem;
+        margin: 2rem auto;
     }
 
     @media (max-width: 767px) {
-        margin-top: 2rem;
-        margin-left: 0;
-        margin-right: 0;
-        border-radius: 0; // Opcional: elimina el borde redondeado en pantallas pequeñas
+        border-radius: 0;
         text-align: center;
 
         .social {

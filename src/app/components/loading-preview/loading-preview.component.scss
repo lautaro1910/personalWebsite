@@ -1,0 +1,70 @@
+$color-background: #33658a; // Un azul oscuro más vibrante
+$color-loader: #f6772d; // Un amarillo anaranjado contrastante
+
+.contenedor {
+    position: fixed; // Fija el contenedor respecto a la pantalla
+    top: 50%; // Centrado verticalmente
+    left: 50%; // Centrado horizontalmente
+    transform: translate(-50%, -50%); // Ajusta el punto de referencia al centro del contenedor
+    background-color: $color-background; // Fondo del contenedor
+    width: 15vw; // Tamaño del contenedor
+    height: 15vh;
+    display: flex; // Flexbox para centrar el loader
+    justify-content: center; // Centrar horizontalmente
+    align-items: center; // Centrar verticalmente
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); // Opcional: sombra para mejor visibilidad
+    border-radius: 60%;
+    border: 2px solid $color-loader;
+
+    .loader {
+        width: 250px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        position: relative; // Cambiado a relativo para evitar conflictos con el contenedor
+        font-family: helvetica, arial, sans-serif;
+        text-transform: uppercase;
+        font-weight: 900;
+        color: $color-loader;
+        letter-spacing: 0.2em;
+
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            width: 15px;
+            height: 15px;
+            background: $color-loader;
+            position: absolute;
+            animation: load 0.7s infinite alternate ease-in-out;
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+    }
+}
+
+@keyframes load {
+    0% {
+        left: 0;
+        height: 30px;
+        width: 15px;
+    }
+
+    50% {
+        height: 8px;
+        width: 40px;
+    }
+
+    100% {
+        left: 235px;
+        height: 30px;
+        width: 15px;
+    }
+}
