@@ -1,5 +1,5 @@
+
 .container-principal {
-    
     .card {
         border-radius: 0.5rem;
         border: 1px solid var(--color-1);
@@ -7,22 +7,38 @@
 
         .card-title {
             font-weight: 900;
+            font-size: 1.2rem; // Ajuste responsivo del tamaño
         }
 
         .card-subtitle {
             margin-top: 0.5rem;
             font-weight: 700;
+            font-size: 1rem; // Escala responsiva
         }
 
         i {
             color: var(--color-1);
             font-size: 1.3rem;
         }
+@media (max-width: 576px) {
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-subtitle {
+        font-size: 0.9rem;
+    }
+}
     }
 
     span {
         color: var(--color-1);
         font-weight: 900;
+        font-size: 1.5rem;
+        
+            @media (max-width: 768px) {
+                font-size: 1.2rem;
+            }
     }
 
     .info-personal {
@@ -32,12 +48,16 @@
 
         .columna {
             border-left: 1px dashed var(--color-1);
+@media (max-width: 768px) {
+        border-left: none;
+        margin-top: 1rem;
+    }
         }
 
         p {
             margin-top: 0.4rem !important;
             margin: auto;
-            max-width: 70%;
+            max-width: 100%; // Ajustar a pantalla pequeña
             border-radius: 2rem;
             border: 1px solid var(--color-1);
         }
@@ -50,10 +70,25 @@
 
         .btn {
             color: whitesmoke;
-            width: 27%;
+            width: 100%; // Ancho completo en dispositivos pequeños
+                max-width: 300px;
             font-weight: 700;
             margin: auto;
-        }
-    }
-
+            margin-bottom: 1rem;
+            
+                @media (min-width: 768px) {
+                    width: 27%; // Mantener proporciones en pantallas más grandes
+            
+                    .row {
+                        margin: 0;
+            
+                        @media (max-width: 576px) {
+                            .row {
+                                flex-direction: column;
+                        }
+                                }
+                                }
+                                }
+                                }
+                                }
 }

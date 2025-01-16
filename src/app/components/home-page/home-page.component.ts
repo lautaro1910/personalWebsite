@@ -9,10 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
   text: string[] = [
-    "Estudiante en Ingenieria en Informatica",
-    "Profesor Universitario auxiliar",
+    "Estudiante en Ing. Informatica",
+    "Profesor Universitario aux.",
     "Desarrollador de Software",
-    "Me apasiona la tecnologia"
+    "Loco por la tecnologia"
   ];
 
   currentText: string = '';

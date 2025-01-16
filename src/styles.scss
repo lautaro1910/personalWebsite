@@ -12,7 +12,7 @@ body {
     background-size: cover;
 
     .container-principal {
-            background-color: white;
+        background-color: rgb(255, 255, 255);
             max-width: 100%;
             padding: 0.7rem;
             margin-left: 5rem;
@@ -20,6 +20,18 @@ body {
             margin-top: 1.2rem;
             border-radius: 0.5rem;
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    // Estilos para tablets y celulares
+        @media (max-width: 768px) {
+            // Para tablets y pantallas más pequeñas
+            margin-left: 0;
+            margin-right: 0;
+        }
+    
+        @media (max-width: 576px) {
+            // Para celulares
+            margin-left: 0;
+            margin-right: 0;
+        }
         }
     .btn {
         background-color: var(--color-1);
