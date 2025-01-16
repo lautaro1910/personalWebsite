@@ -6,36 +6,35 @@
                 <div class="card-body p-4">
                     <h4 class="card-title text-center mb-4"><span>Charlemos!</span></h4>
                     <p>Enviame un correo electrinico para coordinar un meet y charlar.</p>
-                    <form action="https://formsubmit.co/d.lautaro.soria@gmail.com" method="POST">
+                    <form action="https://formsubmit.co/d.lautaro.soria@gmail.com" method="POST" autocomplete="off">
                         <!-- Nombre -->
                         <div class="mb-3">
-                            <label for="name" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="name"
-                                placeholder="Tu nombre (p.e: Lautaro Soria)" required>
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre (p.e: Lautaro Soria)" required>
                         </div>
                         <!-- Email -->
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email"
-                                placeholder="Tu email (p.e: lautaro@email.com)" required>
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Tu email (p.e: lautaro@email.com)"
+                            required>
                         </div>
                         <!-- Asunto -->
                         <div class="mb-3">
-                            <label for="subject" class="form-label">Asunto</label>
-                            <input type="text" class="form-control" id="subject" placeholder="Asunto del mensaje"
-                                required>
+                        <label for="subject" class="form-label">Asunto</label>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Asunto del mensaje" required>
                         </div>
                         <!-- Mensaje -->
                         <div class="mb-3">
-                            <label for="message" class="form-label">Mensaje</label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="Escribi tu mensaje aca..."
-                                required></textarea>
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Escribí tu mensaje acá..."
+                            required></textarea>
                         </div>
                         <!-- Botón de envío -->
                         <div class="d-grid">
-                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
                         </div>
                     </form>
+                    
                 </div>
             </div>
         </div>
