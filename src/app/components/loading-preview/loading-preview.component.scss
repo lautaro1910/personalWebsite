@@ -1,20 +1,28 @@
-$color-background: #33658a; // Un azul oscuro más vibrante
+$color-background: var(--color-1); // Un azul oscuro más vibrante
 $color-loader: #f6772d; // Un amarillo anaranjado contrastante
 
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; // Asegura que el body ocupe toda la pantalla
+    margin: 0; // Elimina márgenes predeterminados
+    background-color: $color-background !important; // Fondo del body
+}
 
-    .loader {
-        width: 250px;
-        height: 50px;
-        line-height: 50px;
-        text-align: center;
-        position: relative; // Cambiado a relativo para evitar conflictos con el contenedor
+.loader {
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
         font-family: helvetica, arial, sans-serif;
         text-transform: uppercase;
         font-weight: 900;
         color: $color-loader;
         letter-spacing: 0.2em;
 
-        &::before,
+    &::before,
         &::after {
             content: "";
             display: block;
