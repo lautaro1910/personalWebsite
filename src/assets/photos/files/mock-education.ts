@@ -6,7 +6,7 @@ export const EDUCATION: EducationModel[] = [
         id: 1,
         title: "Ingeniería en Informática",
         company: "Universidad Nacional de San Luis",
-        description: "Estudiante de último año de Ingeniería en Informática en la Universidad Nacional de San Luis. Desarrollando trabajo final integrador.",
+        description: "Estudiante de último año de Ingeniería en Informática en Universidad Nacional de San Luis. Desarrollando trabajo final integrador.",
         timeIn: "2019 - Actualidad"
     },
     {

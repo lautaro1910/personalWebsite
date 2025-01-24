@@ -5,7 +5,7 @@ export const WORKS: WorkModel[] = [
         id: 1,
         title: "Pasante en IT",
         company: "Edesal S.A",
-        description: "Pasante informático en el área de IT. Tecnologias: Javascript, Java, SQL Oracle, Python.",
+        description: "Pasante informático en el área de IT. Tecnologías: Javascript, Java, PHP, SQL Oracle y Python.",
         timeIn: "Ene 2025 - Actualidad"
     },
     {
@@ -19,7 +19,7 @@ export const WORKS: WorkModel[] = [
         id: 3,
         title: "Desarrollador de Software - Trainee",
         company: "RunaID",
-        description: "Colaboré en el desarrollo de soluciones de Software utilizando tecnologías como Angular, Node.js, y MariaDB.",
+        description: "Desarrollé soluciones de Software. Tecnologías: Angular, Node.js, y MariaDB.",
         timeIn: "Sep 2024 - Dic 2024"
     }
 ];

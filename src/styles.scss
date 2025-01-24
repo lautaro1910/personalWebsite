@@ -23,14 +23,14 @@ body {
     // Estilos para tablets y celulares
         @media (max-width: 768px) {
             // Para tablets y pantallas más pequeñas
-            margin-left: 0;
-            margin-right: 0;
+            margin-left: 0.5rem;
+                margin-right: 0.5rem;
         }
     
         @media (max-width: 576px) {
             // Para celulares
-            margin-left: 0;
-            margin-right: 0;
+            margin-left: 0.5rem;
+                margin-right: 0.5rem;
         }
         }
     .btn {

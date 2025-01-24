@@ -1,10 +1,11 @@
-.container-principal {
-
     span {
         color: var(--color-1);
         font-weight: 900;
     }
 
+        label {
+            font-weight: 700;
+        }
     .boton {
         width: 70%;
         margin: auto;
@@ -17,5 +18,3 @@
             margin: auto;
         }
     }
-
-}
